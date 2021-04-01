@@ -24,4 +24,11 @@ public class UserRegistrationTest {
         boolean status=userRegistrationOperations.validateEmail(email);
         Assert.assertTrue(status);
     }
+
+    @Test
+    void validateMobileNumber_IfProper_ShouldReturnTrue() {
+        String mobileNUmber="91 9665121109";
+        boolean status=userRegistrationOperations.validateMobileNumber(mobileNUmber);
+        Assert.assertTrue(status);
+    }
 }

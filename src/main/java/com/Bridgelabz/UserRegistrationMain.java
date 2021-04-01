@@ -9,8 +9,8 @@ public class UserRegistrationMain {
         UserRegistrationOperations userRegistrationOperations=new UserRegistrationOperations();
         System.out.println("**** User Registration Checking System ****");
         do {
-            System.out.println("\n"+"1:Validate first name" + "\n" +"2:Validate last name"+"\n"+"3:Validate Email Address"+"\n"+"4:Exit"+"\n"+ "Enter your choice:");
-            choice = scanner.nextInt();
+            System.out.println("\n"+"1:Validate first name" + "\n" +"2:Validate last name"+"\n"+"3:Validate Email Address"+"\n"+"4:Validate Mobile Number"+"\n"+"5:Exit"+"\n"+ "Enter your choice:");
+             choice = Integer.parseInt(scanner.nextLine());
             switch (choice) {
                 case 1:
                     System.out.println("Enter your first name");
@@ -27,7 +27,12 @@ public class UserRegistrationMain {
                     String email=scanner.next();
                     userRegistrationOperations.validateEmail(email);
                     break;
+                case 4:
+                    System.out.println("Enter your MobileNumber");
+                    String mobileNumber=scanner.nextLine();
+                    userRegistrationOperations.validateMobileNumber(mobileNumber);
+                    break;
             }
-        }while (choice!=4);
+        }while (choice!=5);
     }
 }

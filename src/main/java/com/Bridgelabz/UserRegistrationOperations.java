@@ -31,11 +31,9 @@ public class UserRegistrationOperations {
         }
         return status;
     }
-    //abc.xyz@bl.co.in  {15}@[a-z]{15}.[a-z]{3}.[a-z]{3}
+    //abc.xyz@bl.co.in
     public boolean validateEmail(String email) {
         String pattern = "[a-z]{1}(.+)@([a-z]{1,15})(.?([a-z]{2}))+(.?(([a-z]{2})*))$";
-       // String pattern="[a-z]+(\\.([a-z]*))+@[a-z]+(.(([a-z]{2})*))+(\\.(([a-z]{2})*))$";
-        //(.+)$";//"^[a-z]{1}(.*a-z])+@[a-z](.+[a-z])(.+[a-z])$";
         boolean status;
         if (Pattern.matches(pattern, email)) {
             System.out.println("Email is Valid !!");
@@ -43,6 +41,19 @@ public class UserRegistrationOperations {
         } else {
             System.out.println("Email is Invalid !!");
             status = false;
+        }
+        return status;
+    }
+    //91 9645871102
+    public boolean validateMobileNumber(String mobileNumber) {
+        String pattern="[91]{2}\\s[789]{1}[0-9]{9}$";
+        boolean status;
+        if (Pattern.matches(pattern,mobileNumber)) {
+            System.out.println("Mobile Number is valid !!");
+            status=true;
+        } else {
+            System.out.println("Mobile Number is Invalid !!");
+            status=false;
         }
         return status;
     }
