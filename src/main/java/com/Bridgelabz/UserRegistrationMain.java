@@ -9,7 +9,7 @@ public class UserRegistrationMain {
         UserRegistrationOperations userRegistrationOperations=new UserRegistrationOperations();
         System.out.println("**** User Registration Checking System ****");
         do {
-            System.out.println("\n"+"1:Validate first name" + "\n" + "Enter your choice:");
+            System.out.println("\n"+"1:Validate first name" + "\n" +"2:Validate last name"+"\n"+ "Enter your choice:");
             choice = scanner.nextInt();
             switch (choice) {
                 case 1:
@@ -17,7 +17,12 @@ public class UserRegistrationMain {
                     String firstName = scanner.next();
                     userRegistrationOperations.validateFirstName(firstName);
                     break;
+                case 2:
+                    System.out.println("Enter your last name");
+                    String lastName= scanner.next();
+                    userRegistrationOperations.validateLastName(lastName);
+                    break;
             }
-        }while (choice!=2);
+        }while (choice!=3);
     }
 }

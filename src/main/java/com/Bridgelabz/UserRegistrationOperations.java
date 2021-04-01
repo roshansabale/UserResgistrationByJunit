@@ -9,11 +9,25 @@ public class UserRegistrationOperations {
 
         boolean status;
         if(Pattern.matches(pattern, firstName)) {
-            System.out.println("First name is Valid");
+            System.out.println("First name is Valid !!");
             status=true;
         }else {
-            System.out.println("First name is Invalid");
+            System.out.println("First name is Invalid !!");
             status=false;
+        }
+        return status;
+    }
+
+    public boolean validateLastName(String lastName) {
+        String pattern = "^[A-Z]{1}[a-z]{2,25}$";
+
+        boolean status;
+        if (Pattern.matches(pattern, lastName)) {
+            System.out.println("Last name is Valid !!");
+            status = true;
+        } else {
+            System.out.println("Last name is Invalid !!");
+            status = false;
         }
         return status;
     }
