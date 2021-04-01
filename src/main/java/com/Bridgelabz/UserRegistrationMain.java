@@ -9,7 +9,7 @@ public class UserRegistrationMain {
         UserRegistrationOperations userRegistrationOperations=new UserRegistrationOperations();
         System.out.println("**** User Registration Checking System ****");
         do {
-            System.out.println("\n"+"1:Validate first name" + "\n" +"2:Validate last name"+"\n"+ "Enter your choice:");
+            System.out.println("\n"+"1:Validate first name" + "\n" +"2:Validate last name"+"\n"+"3:Validate Email Address"+"\n"+"4:Exit"+"\n"+ "Enter your choice:");
             choice = scanner.nextInt();
             switch (choice) {
                 case 1:
@@ -22,7 +22,12 @@ public class UserRegistrationMain {
                     String lastName= scanner.next();
                     userRegistrationOperations.validateLastName(lastName);
                     break;
+                case 3:
+                    System.out.println("Enter your Email");
+                    String email=scanner.next();
+                    userRegistrationOperations.validateEmail(email);
+                    break;
             }
-        }while (choice!=3);
+        }while (choice!=4);
     }
 }

@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="UserRegistrationTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2021-04-01T12:26:19" hostname="LAPTOP-6I2PIU3U" time="0.158">
+<testsuite name="UserRegistrationTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2021-04-01T17:31:05" hostname="LAPTOP-6I2PIU3U" time="0.033">
   <properties/>
-  <testcase name="validateLastName_IfProper_ShouldReturnTrue()" classname="UserRegistrationTest" time="0.158"/>
-  <system-out><![CDATA[Last name is Valid
+  <testcase name="validateEmail_IfProperinPart_ShouldReturnTrue()" classname="UserRegistrationTest" time="0.033"/>
+  <system-out><![CDATA[Email is Valid !!
 ]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

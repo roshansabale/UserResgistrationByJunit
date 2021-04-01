@@ -17,4 +17,11 @@ public class UserRegistrationTest {
         boolean status=userRegistrationOperations.validateLastName(lastName);
         Assert.assertTrue(status);
     }
+
+    @Test
+    void validateEmail_IfProperinPart_ShouldReturnTrue() {
+        String email="abc.xyz@bl.co.in";
+        boolean status=userRegistrationOperations.validateEmail(email);
+        Assert.assertTrue(status);
+    }
 }
