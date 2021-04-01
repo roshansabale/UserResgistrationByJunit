@@ -33,7 +33,7 @@ public class UserRegistrationOperations {
     }
     //abc.xyz@bl.co.in  {15}@[a-z]{15}.[a-z]{3}.[a-z]{3}
     public boolean validateEmail(String email) {
-        String pattern = "[a-z]{1}(.+)@([a-z]{1,15})(.([a-z]{2}))+(.(([a-z]{2})*))$";
+        String pattern = "[a-z]{1}(.+)@([a-z]{1,15})(.?([a-z]{2}))+(.?(([a-z]{2})*))$";
        // String pattern="[a-z]+(\\.([a-z]*))+@[a-z]+(.(([a-z]{2})*))+(\\.(([a-z]{2})*))$";
         //(.+)$";//"^[a-z]{1}(.*a-z])+@[a-z](.+[a-z])(.+[a-z])$";
         boolean status;
