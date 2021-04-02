@@ -1,4 +1,4 @@
-com/Bridgelabz/UserRegistrationOperations.java
- com.Bridgelabz.UserRegistrationOperations
 com/Bridgelabz/UserRegistrationMain.java
  com.Bridgelabz.UserRegistrationMain
+com/Bridgelabz/UserRegistrationOperations.java
+ com.Bridgelabz.UserRegistrationOperations

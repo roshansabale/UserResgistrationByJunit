@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="UserRegistrationTest" tests="1" skipped="0" failures="1" errors="0" timestamp="2021-04-02T16:51:40" hostname="LAPTOP-6I2PIU3U" time="0.032">
+<testsuite name="UserRegistrationTest" tests="1" skipped="0" failures="1" errors="0" timestamp="2021-04-02T17:30:10" hostname="LAPTOP-6I2PIU3U" time="0.037">
   <properties/>
-  <testcase name="validatePassword_WhenProperByRule_ShoulReturnTrue()" classname="UserRegistrationTest" time="0.032">
+  <testcase name="validatePassword_WhenProperByRule_ShoulReturnTrue()" classname="UserRegistrationTest" time="0.037">
     <failure message="java.lang.AssertionError" type="java.lang.AssertionError">java.lang.AssertionError
 	at org.junit.Assert.fail(Assert.java:86)
 	at org.junit.Assert.assertTrue(Assert.java:41)
@@ -97,7 +97,7 @@
 	at java.lang.Thread.run(Thread.java:748)
 </failure>
   </testcase>
-  <system-out><![CDATA[Provided password in invalid
+  <system-out><![CDATA[Provided password is invalid !!
 ]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>
