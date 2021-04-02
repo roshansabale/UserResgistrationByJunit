@@ -20,15 +20,16 @@ public class UserRegistrationTest {
 
     @Test
     void validateEmail_IfProperinPart_ShouldReturnTrue() {
-        String email="abc.xyz@bl.co.in";
+        String email="roshan.sabale@netwin.co.in";
         boolean status=userRegistrationOperations.validateEmail(email);
         Assert.assertTrue(status);
     }
 
     @Test
     void validateMobileNumber_IfProper_ShouldReturnTrue() {
-        String mobileNUmber="91 9665121109";
+        String mobileNUmber="91 9665412209";
         boolean status=userRegistrationOperations.validateMobileNumber(mobileNUmber);
         Assert.assertTrue(status);
     }
+
 }

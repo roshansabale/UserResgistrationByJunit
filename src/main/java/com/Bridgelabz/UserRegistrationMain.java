@@ -15,12 +15,12 @@ public class UserRegistrationMain {
                 case 1:
                     System.out.println("Enter your first name");
                     String firstName = scanner.next();
-                    userRegistrationOperations.validateFirstName(firstName);
+                    userRegistrationOperations.validateFirstNameOrLastName(firstName);
                     break;
                 case 2:
                     System.out.println("Enter your last name");
                     String lastName= scanner.next();
-                    userRegistrationOperations.validateLastName(lastName);
+                    userRegistrationOperations.validateFirstNameOrLastName(lastName);
                     break;
                 case 3:
                     System.out.println("Enter your Email");

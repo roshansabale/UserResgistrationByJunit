@@ -4,21 +4,21 @@ import java.util.regex.Pattern;
 
 public class UserRegistrationOperations {
     //UC:1 Validate FirstName
-    public boolean validateFirstName(String firstName) {
+    public boolean validateFirstNameOrLastName(String name) {
         String pattern ="^[A-Z]{1}[a-z]{2,25}$";
 
         boolean status;
-        if(Pattern.matches(pattern, firstName)) {
-            System.out.println("First name is Valid !!");
+        if(Pattern.matches(pattern, name)) {
+            System.out.println("Provided First or Last name is Valid !!");
             status=true;
         }else {
-            System.out.println("First name is Invalid !!");
+            System.out.println("Provided First or Last name is Invalid !!");
             status=false;
         }
         return status;
     }
 
-    public boolean validateLastName(String lastName) {
+    /*public boolean validateLastName(String lastName) {
         String pattern = "^[A-Z]{1}[a-z]{2,25}$";
 
         boolean status;
@@ -30,7 +30,7 @@ public class UserRegistrationOperations {
             status = false;
         }
         return status;
-    }
+    }*/
     //abc.xyz@bl.co.in
     public boolean validateEmail(String email) {
         String pattern = "[a-z]{1}(.+)@([a-z]{1,15})(.?([a-z]{2}))+(.?(([a-z]{2})*))$";
