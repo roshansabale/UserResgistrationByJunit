@@ -5,31 +5,37 @@ import org.junit.jupiter.api.Test;
 public class UserRegistrationTest {
     UserRegistrationOperations userRegistrationOperations =new UserRegistrationOperations();
     @Test
-    void validateFirstName_IfProper_ShouldReturnTrue() {
+    void validateFirstName_WhenProper_ShouldReturnTrue() {
         String firstName="Roshan"; //Ros ros Roshan ROS
-        boolean status=userRegistrationOperations.validateFirstName(firstName);
+        boolean status=userRegistrationOperations.validateFirstNameOrLastName(firstName);
         Assert.assertTrue(status);
     }
 
     @Test
-    void validateLastName_IfProper_ShouldReturnTrue() {
+    void validateLastName_WhenProper_ShouldReturnTrue() {
         String lastName="Sabale";
-        boolean status=userRegistrationOperations.validateLastName(lastName);
+        boolean status=userRegistrationOperations.validateFirstNameOrLastName(lastName);
         Assert.assertTrue(status);
     }
 
     @Test
-    void validateEmail_IfProperinPart_ShouldReturnTrue() {
+    void validateEmail_WhenProper_ShouldReturnTrue() {
         String email="roshan.sabale@netwin.co.in";
         boolean status=userRegistrationOperations.validateEmail(email);
         Assert.assertTrue(status);
     }
 
     @Test
-    void validateMobileNumber_IfProper_ShouldReturnTrue() {
+    void validateMobileNumber_WhenProper_ShouldReturnTrue() {
         String mobileNUmber="91 9665412209";
         boolean status=userRegistrationOperations.validateMobileNumber(mobileNUmber);
         Assert.assertTrue(status);
     }
 
+    @Test
+    void validatePassword_WhenProperByRule_ShoulReturnTrue() {
+        String password="Roshanlkp";
+        boolean status=userRegistrationOperations.validatePassword(password);
+        Assert.assertTrue(status);
+    }
 }

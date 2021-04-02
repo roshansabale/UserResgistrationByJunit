@@ -11,7 +11,7 @@ public class UserRegistrationOperations {
         if(Pattern.matches(pattern, name)) {
             System.out.println("Provided First or Last name is Valid !!");
             status=true;
-        }else {
+        } else {
             System.out.println("Provided First or Last name is Invalid !!");
             status=false;
         }
@@ -53,6 +53,20 @@ public class UserRegistrationOperations {
             status=true;
         } else {
             System.out.println("Mobile Number is Invalid !!");
+            status=false;
+        }
+        return status;
+    }
+
+    public boolean validatePassword(String password) {
+        String pattern="^[a-zA-Z]{8,15}$";
+        boolean status;
+
+        if(Pattern.matches(pattern,password)) {
+            System.out.println("Provide password is valid !!");
+            status=true;
+        } else {
+            System.out.println("Provided password is invalid !!");
             status=false;
         }
         return status;
