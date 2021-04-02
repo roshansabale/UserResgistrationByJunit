@@ -34,7 +34,7 @@ public class UserRegistrationTest {
 
     @Test
     void validatePassword_WhenProperByRule_ShoulReturnTrue() {
-        String password="Roshanlkp";
+        String password="ROSHANaa991";
         boolean status=userRegistrationOperations.validatePassword(password);
         Assert.assertTrue(status);
     }

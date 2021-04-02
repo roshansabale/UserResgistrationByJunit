@@ -9,8 +9,8 @@ public class UserRegistrationMain {
         UserRegistrationOperations userRegistrationOperations=new UserRegistrationOperations();
         System.out.println("**** User Registration Checking System ****");
         do {
-            System.out.println("\n"+"1:Validate first name" + "\n" +"2:Validate last name"+"\n"+"3:Validate Email Address"
-                    +"\n"+"4:Validate Mobile Number"+"\n"+"5:Validate Password"+"\n"+"6:Exit"+"\n"+ "Enter your choice:");
+            System.out.println("\n"+"1:Validate first name" + "\n" +"2:Validate last name"+"\n"+"3:Validate email address"
+                    +"\n"+"4:Validate mobile number"+"\n"+"5:Validate password"+"\n"+"6:Exit"+"\n"+ "Enter your choice:");
              choice = Integer.parseInt(scanner.nextLine());
             switch (choice) {
                 case 1:
