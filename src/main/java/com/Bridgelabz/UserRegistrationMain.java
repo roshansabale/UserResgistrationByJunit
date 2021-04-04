@@ -2,6 +2,7 @@ package com.Bridgelabz;
 
 import java.util.Scanner;
 
+
 public class UserRegistrationMain {
     public static void main(String[] args) {
         int choice;
@@ -25,7 +26,7 @@ public class UserRegistrationMain {
                     break;
                 case 3:
                     System.out.println("Enter your Email");
-                    String email=scanner.next();
+                    String email=scanner.nextLine();
                     userRegistrationOperations.validateEmail(email);
                     break;
                 case 4:

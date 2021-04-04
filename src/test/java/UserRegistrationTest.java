@@ -20,7 +20,7 @@ public class UserRegistrationTest {
 
     @Test
     void validateEmail_WhenProper_ShouldReturnTrue() {
-        String email="roshan.sabale@netwin.co.in";
+        String email="roshan.sabale@bl.co.in";
         boolean status=userRegistrationOperations.validateEmail(email);
         Assert.assertTrue(status);
     }
@@ -34,7 +34,7 @@ public class UserRegistrationTest {
 
     @Test
     void validatePassword_WhenProperByRule_ShoulReturnTrue() {
-        String password="ROSHANaa991";
+        String password="74Rosa@hn@gh";
         boolean status=userRegistrationOperations.validatePassword(password);
         Assert.assertTrue(status);
     }

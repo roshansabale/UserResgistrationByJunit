@@ -4,6 +4,7 @@ import java.util.regex.Pattern;
 
 public class UserRegistrationOperations {
     //UC:1 Validate FirstName
+
     public boolean validateFirstNameOrLastName(String name) {
         String pattern ="^[A-Z]{1}[a-z]{2,25}$";
 
@@ -33,7 +34,7 @@ public class UserRegistrationOperations {
     }*/
     //abc.xyz@bl.co.in
     public boolean validateEmail(String email) {
-        String pattern = "[a-z]{1}(.+)@([a-z]{1,15})(.?([a-z]{2}))+(.?(([a-z]{2})*))$";
+        String pattern = "[a-z]{1}(.+)@([a-z0-9]{1,15})(.?([a-z]{2,}))+(.?(([a-z]{2,})*))$";
         boolean status;
         if (Pattern.matches(pattern, email)) {
             System.out.println("Email is Valid !!");
@@ -59,9 +60,9 @@ public class UserRegistrationOperations {
     }
 
     public boolean validatePassword(String password) {
-        String pattern = "^(?=.*[0-9])"
-                + "(?=.*[A-Z])"+"[a-zA-Z]"
-                + ".{8,25}$";
+        //String pattern = "^(?=.*[0-9])(?=.*[A-Z])[a-zA-Z].{8,25}$";
+        //String pattern="(?=.*[A-Z])(?=.*[0-9])([!?-@#$]?)[a-zA-Z0-9]{8,32}$";
+        String pattern="^(?=.*[A-Z])(?=.*[0-9])[A-Za-z0-9(($#@!%_&))]{8,}$";
         boolean status;
 
         if(Pattern.matches(pattern,password)) {
