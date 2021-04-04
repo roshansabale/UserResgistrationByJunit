@@ -1,2 +1,4 @@
+EmailSampleTest.java
+ EmailSampleTest
 UserRegistrationTest.java
  UserRegistrationTest
